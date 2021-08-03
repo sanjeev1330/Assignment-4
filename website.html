@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GlitchKart</title>
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+}
+body{
+    background:linear-gradient(to bottom right, black,rgb(12, 3, 61));
+}
+
+h1{
+  color: rgb(65, 136, 197);
+  font-size: 3rem;
+}
+
+nav{
+  width: 100vw;
+  height: 120px;
+  border: none;
+}
+
+ul{
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+li{
+  list-style-type: none;
+  color: aliceblue;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+a{
+  text-decoration: none;
+}
+
+.brand:hover{
+  color: #47fdb1;
+  cursor: pointer;
+}
+
+@media screen and (max-width:650px){
+  
+  ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  nav{
+    height: 450px;
+  }
+}
+
+
+
+#slideshow{
+  width: 60vw;
+  height: 700px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slide{
+  float:left
+}
+
+.slide img{
+
+  height: 700px;
+  width: 60vw;
+}
+
+.wrapper{
+  border: none;
+  width: calc(70vw*4);
+  animation:  15s ease infinite slider;
+}
+
+@keyframes slider {
+
+  16% {
+    margin-left: 0px;
+  }
+  
+  32% {
+    margin-left: calc(-60vw * 1);
+  }
+  
+  48% {
+    margin-left: calc(-60vw * 2);
+  }
+  
+  64% {
+    margin-left: calc(-60vw* 3);
+  }
+}
+
+
+#items{
+    border: none;
+  width: 70vw;
+  height: 800px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+figure{
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid rgb(58, 58, 58);
+  border-radius: 10px;
+  font-size: 2rem;
+  color: rgb(78, 118, 248);
+  box-shadow: 2px 2px 3px rgb(104,104,104);
+  transition: .2s ease-in;
+}
+
+figure:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+figure img{
+  width: 100%;
+}
+
+figure button{
+  font-size: 1.5rem;
+  width: 90px;
+  height: 40px;
+  border-radius: 2px;
+  transition: 1s ease;
+}
+
+figure button:hover{
+  background-color: #686868;
+  cursor: pointer;
+}
+
+                /* ITEMS END HERE  */
+
+footer{
+  height: 900px;
+}
+.radd{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+}
+.button{
+    border: none;
+    color: rgb(62, 252, 195);
+}
+#foot{
+    width: 700px;
+    height: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right,rgb(39, 39, 39),black);
+}
+
+</style>>
+  
+</head>
+<body>
+  
+  <nav>
+    
+      <h1 class="brand">Glitch<span style="color:red">Kart</span></h1><br>
+      <ul>    
+        <li class="brand" ><a href="#"></a>HOME</li>
+        <li class="brand" ><a href="#"></a>PRODUCTS</li>
+        <li class="brand" ><a href="#"></a>ABOUT</li>
+        <li class="brand" ><a href="#"></a>SIGNIN</li>
+        
+      </ul>
+  </nav>
+
+  <br>
+    <div id="slideshow">
+
+      <div class="wrapper">
+
+        <div class="slide">
+            <img src="https://images.samsung.com/in/smartphones/galaxy-z-flip/images/galaxy-z-flip_jump-to_s20_banner_m.jpg" alt="">
+         
+        </div>
+
+        <div class="slide">
+          <img src="https://www.reliancedigital.in/medias/DIS-iPhone-11-46-999-Carousel-Banner-23-07-2021-Mobile.jpg?context=bWFzdGVyfGltYWdlc3w1ODM2MHxpbWFnZS9qcGVnfGltYWdlcy9oOTQvaDMwLzk2MDEwMzk0MDA5OTAuanBnfDI0YzBmOTMxMTA2ZjVjOTUwZTFlYzM4ZmE1M2VjNTFiNTY4NjMxYzQ5NDZjODU4MWE4ZTQ0ZjJlN2FhN2I0MTY" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="https://i.pinimg.com/originals/b1/a7/1a/b1a71a267f6188d3b8a74c8abba7661f.jpg" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="https://www.lg.com/au/images/plp-b2c/b2c-7/K-Series-Hero-Banner_M_768x1080.jpg" alt="">
+        </div>
+
+      </div>
+
+
+    </div>
+<hr>
+
+
+          <section id="items">
+
+            <figure>
+                <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/10/01/928451-google-pixel-5.jpg" class="radd">
+
+              <figcaption>
+                      <h2>pixel 5</h2>
+                      <p></p>
+                      <h2 id="price">&dollar; 500</h2>
+                      <button class="button">Buy</button>
+              </figcaption>
+
+            </figure>
+
+            <figure>
+                <img src="https://cdn.pocket-lint.com/r/s/300x/assets/images/149322-phones-review-review-apple-iphone-11-review-image1-u5x3kuzag0.jpg" class="radd">
+              <figcaption>
+                      <h2>iPhone 11</h2>
+                      <p></p>
+                      <h2 id="price">&dollar; 480</h2>
+                      <button class="button">Buy</button>
+              </figcaption>
+
+            </figure>
+
+            <figure>
+                <img src="https://i.gadgets360cdn.com/large/realme_8_5g_image_1619077180924.jpg?downsize=950:*&output-quality=80" class="radd">
+              <figcaption>
+                      <h2>realme 8</h2>
+                      <p></p>
+                      <h2 id="price">&dollar; 250</h2>
+                      <button class="button">Buy</button>
+              </figcaption>
+
+            </figure>
+
+            <figure>
+                <img src="https://i.ytimg.com/vi/L_sQXMjAasA/maxresdefault.jpg" class="radd">
+              <figcaption>
+                      <h2>Nord 2</h2>
+                      <p></p>
+                      <h2 id="price">&dollar; 300</h2>
+                      <button class="button">Buy</button>
+              </figcaption>
+
+            </figure>
+
+            <figure>
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F01%2Fsamsung-galaxy-s21-ultra-release-info-tw.jpg?w=960&cbr=1&q=90&fit=max" class="radd">
+              <figcaption>
+                      <h2>Galaxy s21</h2>
+                      <p></p>
+                      <h2 id="price">&dollar; 400</h2>
+                      <button class="button">Buy</button>
+              </figcaption>
+
+            </figure>
+
+            <figure>
+                <img src="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p40-pro-plus/images/design/material-black.jpg" class="radd">
+              <figcaption>
+                      <h2>Huawei p40</h2>
+                      <p></p>
+                      <h2 id="price">&dollar; 450</h2>
+                      <button class="button">Buy</button>
+              </figcaption>
+
+            </figure>
+            <figure  id="foot">
+              <figcaption>
+                     
+                      <p><a href = "2212sanjeevk@gmail.com">Contact us</a> | <a href="#">Report</a></p>
+                     
+              </figcaption>
+
+            </figure>
+
+            
+
+          </section>
+
+
+</body>
+</html>
